@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>הצעה · כתב הסכמה להעברת זכויות · AI Lab Pro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Hebrew:wght@500;600;700&family=Noto+Sans+Hebrew:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0A0F14; --ink-2:#121922; --ink-3:#1B2531;
+  --sand:#EFE7D8; --sand-2:#C9C0AF;
+  --amber:#E8A64A; --amber-2:#F2BC63; --amber-soft:#FBF1E0;
+  --paper:#FBF9F4; --paper-2:#F2EEE5; --line:#E3DCCD;
+  --text:#1C1A17; --muted:#6B655B;
+  --ok:#2E7D5B;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{font-family:"Noto Sans Hebrew",-apple-system,"Segoe UI",sans-serif;background:var(--paper);color:var(--text);line-height:1.7;font-weight:400;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Noto Serif Hebrew","Noto Sans Hebrew",serif;line-height:1.25;font-weight:600}
+.num{font-variant-numeric:tabular-nums;unicode-bidi:isolate;direction:ltr;display:inline-block}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px}
+a{color:inherit}
+
+/* topbar */
+.top{background:var(--ink);color:var(--sand);padding:14px 0;position:sticky;top:0;z-index:20;border-bottom:1px solid #243041}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font-family:"Noto Serif Hebrew",serif;font-weight:700;font-size:19px;letter-spacing:.01em}
+.brand img{width:26px;height:26px}
+.brand small{font-family:"Noto Sans Hebrew",sans-serif;color:var(--amber);font-size:10px;font-weight:700;letter-spacing:.14em;margin-inline-start:2px}
+.top .meta{font-size:12px;color:var(--sand-2)}
+.brand{white-space:nowrap;flex-shrink:0}
+@media(max-width:700px){
+  .top .meta{font-size:11px;text-align:left}
+  .hero .facts{display:grid;grid-template-columns:1fr 1fr}
+  .hero .fact{min-width:0}
+}
+
+/* hero */
+.hero{background:var(--ink);color:var(--sand);padding:64px 0 56px;position:relative}
+.hero .kicker{color:var(--amber);font-size:12px;font-weight:700;letter-spacing:.16em;margin-bottom:14px}
+.hero h1{font-size:clamp(30px,5.2vw,48px);margin-bottom:16px;color:#fff}
+.hero p.lead{font-size:19px;color:var(--sand);max-width:680px;font-weight:300}
+.hero .facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.hero .fact{background:var(--ink-2);border:1px solid #243041;border-radius:12px;padding:12px 16px;min-width:150px}
+.hero .fact b{display:block;font-size:22px;color:var(--amber-2);font-family:"Noto Serif Hebrew",serif}
+.hero .fact span{font-size:12.5px;color:var(--sand-2)}
+
+/* sections */
+section{padding:52px 0;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0}
+.sec-k{color:var(--amber);font-size:12px;font-weight:700;letter-spacing:.16em;margin-bottom:8px}
+h2{font-size:clamp(24px,3.6vw,32px);margin-bottom:16px}
+h3{font-size:19px;margin:22px 0 8px}
+p{margin-bottom:12px}
+.lead-s{font-size:17.5px;color:var(--muted);max-width:720px;font-weight:300}
+ul.plain{list-style:none}
+ul.plain li{position:relative;padding-inline-start:22px;margin-bottom:8px}
+ul.plain li::before{content:"";position:absolute;inset-inline-start:0;top:12px;width:9px;height:9px;border-radius:50%;background:var(--amber)}
+ul.check li::before{background:var(--ok)}
+ul.no li::before{background:var(--sand-2)}
+
+/* steps */
+.steps{counter-reset:s;display:grid;gap:14px;margin-top:20px}
+.step{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 22px;position:relative}
+.step .n{counter-increment:s;position:absolute;inset-inline-start:-14px;top:18px;width:34px;height:34px;border-radius:50%;background:var(--ink);color:var(--amber-2);display:flex;align-items:center;justify-content:center;font-family:"Noto Serif Hebrew",serif;font-weight:700;font-size:16px;border:2px solid var(--paper)}
+.step .n::before{content:counter(s)}
+.step h3{margin:0 0 6px;font-size:19px}
+.step .who{display:inline-block;font-size:12px;color:var(--muted);background:var(--paper-2);border-radius:999px;padding:2px 10px;margin-bottom:8px}
+.step p{margin-bottom:6px}
+
+/* details */
+details{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px}
+details summary{cursor:pointer;color:var(--muted);font-size:14px;font-weight:600;list-style:none;display:flex;align-items:center;gap:8px}
+details summary::-webkit-details-marker{display:none}
+details summary::before{content:"+";display:inline-flex;width:20px;height:20px;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:6px;font-weight:700;color:var(--amber);background:#fff}
+details[open] summary::before{content:"–"}
+details .body{padding:10px 0 4px;font-size:14.5px;color:#3B3730}
+details .body p{margin-bottom:8px}
+details .body ul{padding-inline-start:18px;margin-bottom:8px}
+details .body code{font-family:ui-monospace,Menlo,monospace;font-size:12.5px;background:var(--paper-2);padding:1px 6px;border-radius:5px;direction:ltr;unicode-bidi:isolate}
+
+/* two columns */
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+@media(max-width:700px){.cols{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px}
+.card h3{margin-top:0}
+
+/* price */
+.price{background:var(--ink);color:var(--sand);border-radius:20px;padding:30px 28px;margin-top:20px;display:grid;grid-template-columns:1.1fr 1fr;gap:26px;align-items:start}
+@media(max-width:700px){.price{grid-template-columns:1fr}}
+.price .big{font-family:"Noto Serif Hebrew",serif;font-size:52px;color:#fff;line-height:1;margin:6px 0 4px}
+.price .big small{font-size:18px;color:var(--amber-2);font-family:"Noto Sans Hebrew",sans-serif;font-weight:500}
+.price .vat{color:var(--sand-2);font-size:13.5px}
+.price ul.plain li{color:var(--sand);font-size:15px}
+.price ul.plain li::before{background:var(--amber)}
+.price h3{color:var(--amber-2);font-size:15px;letter-spacing:.06em;margin:0 0 10px;font-family:"Noto Sans Hebrew",sans-serif;font-weight:700}
+.pay{margin-top:14px;padding-top:14px;border-top:1px solid #2A3646;color:var(--sand-2);font-size:14px}
+
+/* table */
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:15px}
+th,td{padding:12px 14px;text-align:right;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--paper-2);font-weight:600;font-size:13.5px;color:var(--muted)}
+tr:last-child td{border-bottom:0}
+td.total,tr.total td{font-weight:700;background:var(--amber-soft)}
+.tbl-wrap{overflow-x:auto;margin-top:14px;border-radius:14px}
+
+/* option cards */
+.opt{border:2px solid var(--line);border-radius:18px;padding:22px;background:#fff;position:relative}
+.opt.rec{border-color:var(--amber)}
+.opt .tag{position:absolute;top:-12px;inset-inline-start:18px;background:var(--amber);color:var(--ink);font-size:12px;font-weight:700;padding:3px 12px;border-radius:999px}
+.opt .sum{font-family:"Noto Serif Hebrew",serif;font-size:28px;margin:6px 0 2px}
+.opt .sum small{font-size:14px;color:var(--muted);font-family:"Noto Sans Hebrew",sans-serif}
+.opt p.s{color:var(--muted);font-size:14.5px;margin-bottom:10px}
+
+/* timeline */
+.tl{display:grid;gap:0;margin-top:16px;border-inline-start:2px solid var(--line);padding-inline-start:22px}
+.tl .t{position:relative;padding-bottom:18px}
+.tl .t::before{content:"";position:absolute;inset-inline-start:-29px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--amber);border:2px solid var(--paper)}
+.tl .t b{display:block;font-size:16px}
+.tl .t span{color:var(--muted);font-size:14px}
+
+/* callout */
+.callout{background:var(--amber-soft);border:1px solid #F0D9AE;border-radius:14px;padding:16px 18px;margin-top:16px;font-size:15px}
+.callout b{color:#8A5A12}
+
+/* cta */
+.cta{background:var(--ink);color:var(--sand);padding:56px 0;text-align:center}
+.cta h2{color:#fff}
+.cta p{color:var(--sand-2);max-width:600px;margin:0 auto 22px}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--amber);color:var(--ink);font-weight:700;font-size:17px;padding:14px 26px;border-radius:999px;text-decoration:none;transition:background .15s}
+.btn:hover{background:var(--amber-2)}
+.btn.ghost{background:transparent;color:var(--sand);border:1px solid #3A4758;margin-inline-start:8px}
+.btn.ghost:hover{background:var(--ink-2)}
+.me{display:flex;gap:18px;align-items:center;margin-top:36px;text-align:right;justify-content:center;flex-wrap:wrap}
+.me img{width:76px;height:76px;border-radius:50%;object-fit:cover;border:2px solid var(--amber)}
+.me div{max-width:520px;font-size:14.5px;color:var(--sand-2)}
+.me b{color:#fff;display:block;font-size:16px}
+
+footer{padding:26px 0;color:var(--muted);font-size:12.5px;text-align:center}
+
+/* spec section */
+.spec{background:var(--paper-2)}
+.spec details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-top:10px;border-top:1px solid var(--line)}
+.spec details summary{color:var(--text);font-size:16px}
+.spec details .body{font-size:14.5px}
+
+@media print{
+  .top,.cta .btn,.btn{display:none}
+  body{background:#fff}
+  section{padding:24px 0;break-inside:avoid}
+  details{break-inside:avoid}
+  details>*{display:block}
+  .hero,.price,.cta{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="wrap">
+    <div class="brand"><img src="gem.png" alt=""> AI Lab <small>PRO</small></div>
+    <div class="meta">הצעה לעו"ד נריה כהן · <span class="num">11.10.2026</span> · בתוקף 30 יום</div>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">אפיון והצעת מחיר</div>
+    <h1>כתב הסכמה להעברת זכויות, בלי להכין ניירת.</h1>
+    <p class="lead">מערכת שמקבלת את הפנייה של בעל הדירה, מכינה לבד את כל סט המסמכים מהתבניות של המשרד, שולחת לחתימה, קולטת את החתומים, ומגישה לך כתב הסכמה מוכן לאישור בלחיצה אחת.</p>
+    <div class="facts">
+      <div class="fact"><b class="num">₪5,900</b><span>הקמה חד-פעמית, לפני מע"מ</span></div>
+      <div class="fact"><b>4–5 שבועות</b><span>עד שזה עובד אצלכם</span></div>
+      <div class="fact"><b class="num">₪30–60</b><span>לחודש, לספקים, על שם המשרד</span></div>
+      <div class="fact"><b>0</b><span>התחייבות ל-AI Lab אחרי המסירה</span></div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section>
+  <div class="wrap">
+    <div class="sec-k">הבעיה</div>
+    <h2>היום: 10 שעות בשבוע של הקלדה, העתקה ומעקב.</h2>
+    <p class="lead-s">בעל דירה מבקש הסכמה. מישהו במשרד אוסף ממנו ת"ז, נסח והסכם מכר, מקליד את הפרטים לתוך 4–6 עמודי מסמכים, שולח, רודף אחרי החתימות, מתייק, מעדכן טבלה, ובסוף מכין את כתב ההסכמה. בערך 7 פעמים בשבוע.</p>
+    <p class="lead-s">המטרה שהגדרת: <b>שהגורם המטפל לא יכין ניירת, אלא רק יאשר את הנכונות.</b> זה בדיוק מה שהמערכת עושה.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-k">איך זה עובד</div>
+    <h2>חמישה שלבים. ארבעה אוטומטיים, אחד שלך.</h2>
+    <p class="lead-s">לכל שלב יש הסבר פשוט, ומתחתיו "פירוט טכני" למי שרוצה להעמיק. אפשר לדלג עליו.</p>
+
+    <div class="steps">
+
+      <div class="step"><div class="n"></div>
+        <h3>בעל הדירה ממלא טופס קצר בטלפון</h3>
+        <span class="who">בעל הדירה · 5 דקות</span>
+        <p>שולחים לו קישור (בוואטסאפ, במייל או מהאתר). הוא ממלא שם וטלפון, מצלם ת"ז, מעלה נסח טאבו עדכני ואת העמוד הראשון של הסכם המכר, ממלא את פרטי עורך הדין שלו, ובוחר מאיזה בנק או חברת ביטוח הוא לוקח את ההלוואה. הטופס לא נותן לשלוח בלי כל הפריטים.</p>
+        <details><summary>פירוט טכני</summary><div class="body">
+          <p>טופס בכתובת של המשרד (למשל <code>hesder.pmlaw.co.il</code>), מותאם לטלפון. שדות: שם מלא, ת"ז, טלפון, מייל; פרויקט (אופציונלי, המערכת מזהה לבד מהנסח); קבצים: ת"ז, נסח, הסכם מכר (תמונה או PDF, עד 10MB כל אחד); עו"ד מייצג: שם, מספר רישיון, מייל, טלפון; גורם מלווה: רשימת בנקים וחברות ביטוח + "אחר". בדיקות תקינות על ת"ז (ספרת ביקורת), מייל, טלפון, סוג קובץ. הקבצים נשמרים מוצפנים באחסון באירופה (Supabase Storage, פרנקפורט) בחשבון של המשרד, לא בשרתי וואטסאפ ולא בטלפון של עובד.</p>
+        </div></details>
+      </div>
+
+      <div class="step"><div class="n"></div>
+        <h3>המערכת קוראת את המסמכים ומכינה את הסט</h3>
+        <span class="who">אוטומטי · דקה</span>
+        <p>המערכת קוראת את הנסח ומוציאה ממנו גוש, חלקה, תת-חלקה, שם הבעלים, ואת שם החברה והח.פ. מהערת האזהרה. לפי זה היא מזהה לאיזה פרויקט התיק שייך. אז היא ממלאת את התבניות של המשרד (ייפוי כוח, כתב הסכמה להסכם, אישור תקינות חתימה) ומפיקה PDF. פרויקט שכבר הופיע פעם אחת, המערכת זוכרת. פרויקט חדש, המטפל ממלא את הפרטים שלו פעם אחת.</p>
+        <details><summary>פירוט טכני</summary><div class="body">
+          <p>חילוץ בעזרת מודל AI (Claude) שקורא את הנסח ואת הת"ז. <b>כל ערך מחולץ מסומן "לאימות" ומוצג למטפל לפני כל שליחה.</b> שום מסמך לא יוצא מהמשרד על סמך חילוץ בלבד.</p>
+          <p>תבניות: מאסטר כללי אחד לכל מסמך, עם מקומות ריקים (למשל <code>{{שם_הבעלים}}</code>, <code>{{גוש}}</code>, <code>{{עוד_מייצג}}</code>, <code>{{חברה}}</code>, <code>{{בנק}}</code>). אני בונה את המאסטרים מארבעת הקבצים ששלחת. לפרויקט עם נוסח ייפוי כוח מיוחד: מצרפים לכרטיס הפרויקט קובץ י"כ משלו, פעם אחת. שלושת הראשונים עליי, אחר כך לפי מדריך של עמוד.</p>
+          <p>כרטיס פרויקט נוצר מתוך האשף בפעם הראשונה (חברה יזמית, ח.פ., כתובת, חותם מטעם החברה, הערות) ומאז מתמלא לבד. הגורם המלווה (בנק/ביטוח) הוא פרט של התיק, לא של הפרויקט, ומופיע במכתב ההסכמות לבנק.</p>
+        </div></details>
+      </div>
+
+      <div class="step"><div class="n"></div>
+        <h3>המסמכים נשלחים לחתימה</h3>
+        <span class="who">אוטומטי</span>
+        <p>מייל יוצא מתיבת המשרד לבעל הדירה ולעורך דינו, עם סט המסמכים והוראות ברורות: לחתום בפני עורך הדין, עורך הדין מאמת, ומחזירים דרך קישור ייעודי. בטבלת המעקב יש גם כפתור וואטסאפ מוכן עם ההודעה כתובה, אם מעדיפים לשלוח ככה.</p>
+        <details><summary>פירוט טכני</summary><div class="body">
+          <p>שליחה דרך Microsoft 365 של המשרד (המערכת שלכם כבר על Microsoft). נוסח המייל לפי הנוסח שלכם, עם לוגו וחתימה. לכל תיק נוצר קישור העלאה פרטי עם תפוגה. תזכורת אוטומטית אם לא הוחזרו מסמכים אחרי X ימים (מספר הימים לבחירתכם). וואטסאפ: קישור <code>wa.me</code> עם טקסט מוכן, בלי בוט ובלי חיבור למטא.</p>
+        </div></details>
+      </div>
+
+      <div class="step"><div class="n"></div>
+        <h3>המסמכים החתומים חוזרים ונקלטים</h3>
+        <span class="who">עו"ד המייצג מעלה · המערכת מתייקת</span>
+        <p>עורך הדין של בעל הדירה מעלה את הסריקות החתומות דרך הקישור (או משיב במייל). המערכת מצמידה אותן לתיק, שולחת "התקבל", מעדכנת את טבלת המעקב עם פרטי הרוכשים, ומכינה תיקייה מסודרת של התיק, מוכנה לגרירה לעודכנית.</p>
+        <details><summary>פירוט טכני</summary><div class="body">
+          <p>קליטה דרך דף העלאה או תיבת מייל ייעודית. תיקיית תיק ב-SharePoint/OneDrive של המשרד: מקור, סט שנשלח, חתומים, כתב הסכמה סופי. טבלת מעקב (Excel ב-OneDrive) מתעדכנת אוטומטית: סטטוס, תאריכים, פרטי רוכשים. חיבור ישיר לעודכנית: תלוי אם לספק יש ממשק; אם יש, זו תוספת נפרדת. אם אין, התיוק הוא גרירה של תיקייה מוכנה.</p>
+        </div></details>
+      </div>
+
+      <div class="step"><div class="n"></div>
+        <h3>אתה מאשר, המערכת מוציאה את כתב ההסכמה</h3>
+        <span class="who">אתה (או מתמחה) · 2 דקות</span>
+        <p>מגיע מייל: "תיק מוכן לאישור". במסך אחד רואים את המסמכים החתומים, את הפרטים שחולצו, ואת כתב ההסכמה המוכן. לוחצים "מאשר". המערכת מפיקה את כתב ההסכמה הסופי עם התאריך, שולחת לבעל הדירה ולעורך דינו, ומתייקת. אין הנפקה בלי אישור אנושי, אף פעם.</p>
+        <details><summary>פירוט טכני</summary><div class="body">
+          <p>מסך האישור נפתח עם כניסה בקוד למייל (בלי סיסמאות). רשימת המאשרים = רשימת כתובות מייל; להוסיף מתמחה = להוסיף כתובת. אפשרות "להחזיר לתיקון" עם הערה. כל פעולה נרשמת ביומן (מי אישר, מתי). כתב ההסכמה מופק מהתבנית שלכם; אם הוא נחתם בחתימה דיגיטלית מאושרת של עו"ד, זה שלב ידני אחרי האישור, בכלי שאתם כבר עובדים איתו.</p>
+        </div></details>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-k">מה מקבלים</div>
+    <h2>מה כלול במחיר, ומה לא.</h2>
+    <div class="cols">
+      <div class="card">
+        <h3>כלול</h3>
+        <ul class="plain check">
+          <li>טופס קליטה בכתובת של המשרד, מותאם לטלפון</li>
+          <li>קריאה אוטומטית של נסח ות"ז וזיהוי הפרויקט</li>
+          <li>בניית מאסטר כללי מ-4 המסמכים שלכם + עד 3 נוסחי ייפוי כוח מיוחדים</li>
+          <li>שליחת המסמכים במייל מתיבת המשרד, תזכורות, כפתור וואטסאפ</li>
+          <li>קליטת החתומים, תיקיית תיק, טבלת מעקב אוטומטית</li>
+          <li>מסך אישור וכתב הסכמה סופי</li>
+          <li>פיילוט על 3–5 תיקים אמיתיים לפני המסירה</li>
+          <li>הדרכה של שעה, מדריך תפעול קצר</li>
+          <li>30 יום אחריות לתיקונים אחרי המסירה</li>
+          <li>הכל על שם המשרד: הקוד, החשבונות, הסיסמאות</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>לא כלול</h3>
+        <ul class="plain no">
+          <li>בוט וואטסאפ אמיתי (דורש אימות עסקי במטא ועלות לכל שיחה; אפשר בשלב שני אם תרצו)</li>
+          <li>חיבור ישיר לעודכנית (אם יתברר שיש ממשק, הצעה נפרדת)</li>
+          <li>חתימה דיגיטלית מאושרת (נשאר בכלי שלכם)</li>
+          <li>רישיונות ותשלומים לספקים (מפורט למטה, בערך ₪30–60 לחודש)</li>
+        </ul>
+        <div class="callout"><b>למה טופס ולא בוט וואטסאפ?</b> צילומי ת"ז ונסחים בוואטסאפ נשמרים בשרתי מטא ובטלפון של מי שמקבל אותם. בטופס, המידע נשאר אצלכם. ווואטסאפ עדיין משמש לשליחת הקישור ולעדכונים.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-k">מחיר</div>
+    <h2>הקמה חד-פעמית. אחר כך זה שלכם.</h2>
+    <div class="price">
+      <div>
+        <h3>הקמה</h3>
+        <div class="big"><span class="num">₪5,900</span> <small>+ מע"מ</small></div>
+        <div class="vat">מחיר קבוע. לא לפי שעות, לא הפתעות.</div>
+        <div class="pay">50% בהזמנה, 50% במסירה, אחרי שהפיילוט עבד על תיקים אמיתיים.</div>
+      </div>
+      <div>
+        <h3>מה זה קונה</h3>
+        <ul class="plain">
+          <li>המערכת המלאה, חמשת השלבים</li>
+          <li>מאסטר כללי מהמסמכים שלכם</li>
+          <li>פיילוט, הדרכה, מדריך</li>
+          <li>30 יום אחריות</li>
+          <li>בעלות מלאה. אין מנוי ל-AI Lab, אין נעילה</li>
+        </ul>
+      </div>
+    </div>
+    <p style="margin-top:16px;color:var(--muted);font-size:14.5px">שינויים עתידיים (תהליך נוסף, שדה חדש, חיבור לעודכנית): לפי הצעה קטנה ונפרדת, רק אם תרצו.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-k">עלויות חודשיות</div>
+    <h2>על מה משלמים כל חודש, ולמי.</h2>
+    <p class="lead-s">המערכת רצה על שלושה שירותים קטנים. אתם משלמים להם ישירות, בכרטיס של המשרד, והחשבונות על שמכם. אני פותח ומגדיר, אתם הבעלים.</p>
+    <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>למי</th><th>בשביל מה</th><th>כמה לחודש</th></tr></thead>
+      <tbody>
+        <tr><td><b>Supabase</b></td><td>מסד הנתונים ואחסון הקבצים (ת"ז, נסחים, PDF). שרתים באירופה, מוצפן.</td><td><span class="num">₪0</span> בתוכנית החינמית. <span class="num">₪90</span> רק אם תרצו גיבוי יומי</td></tr>
+        <tr><td><b>Railway</b></td><td>השרת הקטן שממלא את התבניות, מכין PDF ושולח את המיילים.</td><td><span class="num">₪20–40</span></td></tr>
+        <tr><td><b>Anthropic</b></td><td>קריאת הנסח והת"ז (בערך 30 אגורות לתיק).</td><td><span class="num">₪10</span>, בטעינה מראש</td></tr>
+        <tr><td><b>Microsoft</b></td><td>משתמש 365 נוסף למערכת, רק אם אין לכם משתמש פנוי.</td><td><span class="num">₪0–45</span></td></tr>
+        <tr class="total"><td>סה"כ</td><td>בשימוש של בערך 30 תיקים בחודש</td><td><span class="num">₪30–60</span> לחודש</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h3 style="margin-top:34px">שתי דרכים לנהל את זה</h3>
+    <div class="cols">
+      <div class="opt rec"><span class="tag">מומלץ</span>
+        <div class="sum">הכל על שמכם</div>
+        <p class="s">אתם משלמים לספקים ישירות, בערך <span class="num">₪30–60</span> לחודש.</p>
+        <ul class="plain check">
+          <li>החשבונות, הקוד והסיסמאות על שם המשרד</li>
+          <li>אפס תלות ב-AI Lab אחרי המסירה</li>
+          <li>תמיכה אחרי האחריות: רק אם תבקשו, לפי הצעה</li>
+        </ul>
+      </div>
+      <div class="opt">
+        <div class="sum"><span class="num">₪490</span> <small>לחודש + מע"מ</small></div>
+        <p class="s">אם לא רוצים לפתוח חשבונות ולהתעסק עם ספקים.</p>
+        <ul class="plain">
+          <li>אני מארח, משלם לספקים ועוקב שהכל רץ</li>
+          <li>תיקונים קטנים עד שעה בחודש כלולים</li>
+          <li>ביטול בכל עת בהודעה של 30 יום</li>
+          <li>רוצים לעבור לחשבונות שלכם? מעבירים, בחינם, בכל שלב</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout">אפשר להתחיל באפשרות אחת ולעבור לשנייה. המערכת זהה בשתיהן.</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-k">אבטחה ופרטיות</div>
+    <h2>המידע של הלקוחות נשאר אצלכם.</h2>
+    <ul class="plain check">
+      <li><b>הכל בחשבונות של המשרד.</b> אחרי המסירה אני לא מחזיק נתונים ולא גישה, אלא אם תבחרו באפשרות האירוח.</li>
+      <li><b>אחסון באירופה, מוצפן,</b> גישה רק למשתמשי המשרד. קישורי העלאה פרטיים עם תפוגה.</li>
+      <li><b>צילומי ת"ז נמחקים אוטומטית</b> אחרי 90 יום מהתיוק (או כל מספר ימים שתקבעו). המסמכים החתומים והכתב הסופי נשארים.</li>
+      <li><b>ה-AI רק קורא ומציע.</b> אדם מאשר כל ערך לפני שליחה, ואדם מאשר כל כתב הסכמה.</li>
+      <li><b>יומן פעולות:</b> מי עשה מה ומתי, לכל תיק.</li>
+      <li><b>הסכם עיבוד מידע</b> ביניכם לבין AI Lab, בנוסח שלכם, לפני תחילת העבודה.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-k">לוח זמנים</div>
+    <h2>עובד אצלכם תוך 4–5 שבועות.</h2>
+    <div class="tl">
+      <div class="t"><b>שבוע 0: אישור ההצעה</b><span>מקדמה, הסכם עיבוד, ואני מקבל את החומרים והגישות (רשימה למטה). שיחה של 45 דקות.</span></div>
+      <div class="t"><b>שבועות 1–2: בנייה</b><span>טופס, מאסטרים, מיילים, מסך אישור. אתה רואה גרסה עובדת בסוף שבוע 2.</span></div>
+      <div class="t"><b>שבועות 3–4: פיילוט</b><span>3–5 תיקים אמיתיים עוברים במערכת, במקביל לדרך הישנה. מתקנים מה שצריך.</span></div>
+      <div class="t"><b>שבוע 5: מסירה</b><span>הדרכה של שעה, מדריך, יתרת התשלום. מכאן זה שלכם, עם 30 יום אחריות.</span></div>
+    </div>
+    <p style="color:var(--muted);font-size:14.5px">בהנחה שהחומרים והגישות מגיעים בשבוע הראשון.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-k">מה צריך מכם</div>
+    <h2>רשימה קצרה, רובה אצל מי שמנהל לכם את המחשבים.</h2>
+    <ul class="plain">
+      <li><b>משתמש Microsoft 365 למערכת</b> (למשל <span class="num">hesder@pmlaw.co.il</span>), ממנו ייצאו המיילים. 20 דקות של איש ה-IT.</li>
+      <li><b>תיקייה ב-SharePoint או OneDrive</b> לתיקי ההסכמות.</li>
+      <li><b>כתובת לטופס</b> (למשל <span class="num">hesder.pmlaw.co.il</span>): רשומה אחת אצל מי שמנהל את הדומיין.</li>
+      <li><b>כרטיס אשראי של המשרד</b> לפתיחת שלושת החשבונות (או לבחור באפשרות האירוח).</li>
+      <li><b>דוגמה מלאה אמיתית</b> של כל מסמך מתיק שנסגר (אפשר מושחר), כולל פרוטוקול חברה.</li>
+      <li><b>הנוסחים שאתם שולחים היום</b> לבעל הדירה ולעורך דינו, לוגו וחתימת מייל.</li>
+      <li><b>טבלת המעקב הנוכחית</b>, כדי שהחדשה תיראה אותו דבר.</li>
+      <li><b>רשימת הבנקים וחברות הביטוח</b> שאתם נתקלים בהם, ומי חותם מטעם החברה בכל פרויקט.</li>
+      <li><b>בירור קצר מול עודכנית:</b> האם יש להם ממשק או "מייל לתיק".</li>
+    </ul>
+  </div>
+</section>
+
+<section class="spec">
+  <div class="wrap">
+    <div class="sec-k">למי שרוצה להעמיק</div>
+    <h2>מפרט טכני.</h2>
+    <p class="lead-s">לא חובה לקרוא. זה כאן כדי שמי שמנהל לכם את המחשבים, או עורך דין שרוצה להבין איפה המידע, יוכל לבדוק.</p>
+
+    <details><summary>ארכיטקטורה וספקים</summary><div class="body">
+      <ul>
+        <li><b>טופס ומסך אישור:</b> דפי אינטרנט סטטיים בתת-דומיין של המשרד, מוגשים דרך Cloudflare Pages או GitHub Pages בחשבון המשרד.</li>
+        <li><b>נתונים וקבצים:</b> Supabase (PostgreSQL + Storage), אזור פרנקפורט. הצפנה במנוחה ובתעבורה. הרשאות ברמת שורה (RLS): כל קישור של בעל דירה רואה רק את התיק שלו.</li>
+        <li><b>שרת עיבוד:</b> שירות Python קטן ב-Railway. מילוי תבניות DOCX (python-docx-template), המרה ל-PDF (LibreOffice), שליחת מייל, עדכון Excel.</li>
+        <li><b>AI:</b> Claude API של Anthropic, מפתח על שם המשרד. נשלחים אליו רק הנסח והת"ז לצורך חילוץ; הפלט מאומת ידנית. Anthropic לא מאמנת מודלים על נתוני API.</li>
+        <li><b>מייל וקבצים של המשרד:</b> Microsoft Graph API (רישום אפליקציה ב-Entra ID עם הרשאות Mail.Send ו-Files.ReadWrite לתיקייה אחת) או SMTP של המשתמש הייעודי.</li>
+      </ul>
+    </div></details>
+
+    <details><summary>מבנה הנתונים</summary><div class="body">
+      <ul>
+        <li><code>cases</code>: תיק אחד לכל פנייה. סטטוס: התקבל → סט נשלח → חתומים התקבלו → ממתין לאישור → הונפק. פרטי בעלים, גוש/חלקה, עו"ד מייצג, גורם מלווה.</li>
+        <li><code>projects</code>: חברה יזמית, ח.פ., כתובת הפרויקט, חותם, קובץ י"כ מיוחד (אופציונלי). נוצר מתוך האשף.</li>
+        <li><code>lenders</code>: רשימת בנקים וחברות ביטוח, ניתנת לעריכה.</li>
+        <li><code>documents</code>: כל קובץ, סוגו (מקור/נשלח/חתום/סופי), מי העלה, מתי.</li>
+        <li><code>approvals</code> ו-<code>audit_log</code>: מי אישר, מתי, מאיזו כתובת.</li>
+      </ul>
+    </div></details>
+
+    <details><summary>תבניות ומקומות ריקים</summary><div class="body">
+      <p>המאסטרים הם קובצי Word רגילים עם מקומות ריקים בסוגריים כפולים. רשימה ראשונית (תתעדכן לפי המסמכים שלכם):</p>
+      <ul>
+        <li>בעלים: <code>{{שם_הבעלים}}</code> <code>{{תז_הבעלים}}</code> <code>{{טלפון}}</code> <code>{{מייל}}</code></li>
+        <li>נכס: <code>{{גוש}}</code> <code>{{חלקה}}</code> <code>{{תת_חלקה}}</code> <code>{{כתובת}}</code></li>
+        <li>פרויקט: <code>{{שם_הפרויקט}}</code> <code>{{חברה}}</code> <code>{{חפ}}</code> <code>{{חותם}}</code></li>
+        <li>עו"ד מייצג: <code>{{עוד_שם}}</code> <code>{{עוד_רישיון}}</code> <code>{{עוד_מייל}}</code> <code>{{עוד_טלפון}}</code></li>
+        <li>מלווה: <code>{{בנק}}</code> · תאריכים: <code>{{תאריך}}</code> <code>{{תאריך_עברי}}</code></li>
+      </ul>
+      <p>ייפוי כוח מיוחד לפרויקט: אותו עיקרון, קובץ משלו בכרטיס הפרויקט. כל שינוי בנוסח המאסטר = לערוך את קובץ ה-Word, לא לפנות למתכנת.</p>
+    </div></details>
+
+    <details><summary>זרימת תיק מקצה לקצה</summary><div class="body">
+      <ol style="padding-inline-start:18px">
+        <li>בעל הדירה שולח טופס → תיק נוצר, קבצים נשמרים, מייל "התקבל" אליו, התראה למטפל.</li>
+        <li>השרת שולח נסח + ת"ז ל-Claude → מקבל שדות + רמת ביטחון → שומר כ"ממתין לאימות". מזהה פרויקט לפי ח.פ.; אם לא נמצא, המטפל יוצר כרטיס פרויקט מהאשף.</li>
+        <li>המטפל פותח את התיק, רואה שדות מסומנים, מתקן אם צריך, לוחץ "הפק סט" → DOCX → PDF → תצוגה מקדימה → "שלח".</li>
+        <li>מייל לבעל הדירה ולעו"ד המייצג עם ה-PDF וקישור העלאה אישי. תזכורת אוטומטית אחרי X ימים.</li>
+        <li>עו"ד המייצג מעלה חתומים → תיק עובר ל"ממתין לאישור", מייל למאשר, טבלת המעקב מתעדכנת, תיקיית SharePoint נוצרת.</li>
+        <li>המאשר רואה הכל במסך אחד → "מאשר" (או "להחזיר" עם הערה) → כתב ההסכמה מופק עם תאריך → נשלח → מתויק. נרשם ביומן.</li>
+      </ol>
+    </div></details>
+
+    <details><summary>אבטחה, שמירה ומחיקה</summary><div class="body">
+      <ul>
+        <li>כניסה למסכי המשרד בקוד חד-פעמי למייל; רשימת מורשים ניתנת לעריכה.</li>
+        <li>קישורי העלאה לבעל דירה ולעו"ד: חתומים, תקפים 30 יום, מוגבלים לתיק אחד.</li>
+        <li>מחיקה אוטומטית של צילומי ת"ז אחרי 90 יום מתיוק הכתב הסופי (ניתן לשינוי). שאר המסמכים נשמרים כל עוד תרצו.</li>
+        <li>גיבוי: בתוכנית החינמית של Supabase אין גיבוי יומי אוטומטי; התיקייה ב-SharePoint מכילה עותק של כל המסמכים, כך שהמקור אצלכם בכל מקרה.</li>
+        <li>אין שימוש במידע לאימון מודלים. אין גישה לצד שלישי מעבר לספקים שצוינו.</li>
+      </ul>
+    </div></details>
+
+    <details><summary>מסירה ובעלות</summary><div class="body">
+      <ul>
+        <li>הקוד במאגר GitHub על שם המשרד, עם תיעוד הפעלה. כל ספק אחר יוכל להמשיך משם.</li>
+        <li>החשבונות (Supabase, Railway, Anthropic, Entra) נפתחים במייל של המשרד; אני מקבל הרשאה זמנית לבנייה ומסיר את עצמי במסירה.</li>
+        <li>מדריך תפעול של 2–3 עמודים: איך מוסיפים פרויקט, איך מחליפים נוסח, איך מוסיפים מאשר, מה לעשות אם מייל לא יצא.</li>
+        <li>30 יום אחריות: תקלות ותיקונים בלי עלות. אחר כך, תמיכה רק לפי בקשה.</li>
+      </ul>
+    </div></details>
+  </div>
+</section>
+
+</main>
+
+<div class="cta">
+  <div class="wrap">
+    <h2>מתאים? נקבע 45 דקות ונתחיל.</h2>
+    <p>בשיחה אראה אב-טיפוס עובד של הטופס והמסמך הראשון, ונעבור על הרשימה של מה שצריך מכם.</p>
+    <a class="btn" href="https://wa.me/972546500795?text=%D7%94%D7%99%D7%99%20%D7%9E%D7%90%D7%99%D7%A8%2C%20%D7%A7%D7%A8%D7%90%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%94%D7%94%D7%A6%D7%A2%D7%94%20%D7%9C%D7%9B%D7%AA%D7%91%20%D7%94%D7%94%D7%A1%D7%9B%D7%9E%D7%94">אישור ותיאום בוואטסאפ</a>
+    <a class="btn ghost" href="mailto:meir@ai-lab.co.il?subject=הצעה - כתב הסכמה להעברת זכויות">שאלות במייל</a>
+    <div class="me">
+      <img src="meir.jpg" alt="מאיר לביא">
+      <div><b>מאיר לביא · AI Lab Pro</b>מי שמדבר איתך הוא גם מי שבונה. בונה סוכני AI, אוטומציות ומערכות לעסקים, ומכיר את עולם ההתחדשות העירונית מבפנים.</div>
+    </div>
+  </div>
+</div>
+
+<footer>AI Lab Pro · pro.ai-lab.co.il · ההצעה בתוקף 30 יום · המחירים לפני מע"מ</footer>
+
+</body>
+</html>
